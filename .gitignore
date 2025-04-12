@@ -1,0 +1,30 @@
+# -------------------------
+# 1. Environment & Secrets
+# -------------------------
+.env
+.env.*
+*.key
+*.pem
+
+
+# -------------------------
+# 2. Docker & Build Artifacts
+# -------------------------
+# (Ignore if you don't want local overrides or ephemeral volumes tracked)
+docker-compose.override.yml
+.docker/
+./code
+./code/phpinfo
+./logs
+./mariadb
+./nginx
+
+
+# -------------------------
+# 3. System & Editor Files
+# -------------------------
+.DS_Store
+Thumbs.db
+*.swp
+.vscode/
+.idea/
